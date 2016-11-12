@@ -40,46 +40,8 @@
 </head>
 
 <body>
-
     <div id="wrapper">
-
-        <!-- Sidebar -->
-        <div id="sidebar-wrapper">
-            <ul class="sidebar-nav">
-                <li>
-                    <a href="#">
-                       <div style="width:250px" class="row">
-                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                                <img src="img/avatar.png" >
-                            </div>
-                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                                <p class="text-center">Michal Š.</p>
-                                <p class="text-center">"M"</p>
-                            </div>
-                        </div>
-                    </a>   
-                </li>
-                <li>
-                    <a href="#">Domov</a>
-                </li>
-                <li>
-                    <a href="#">Kinižnica</a>
-                </li>
-                <li>
-                    <a href="#">Odporúčané</a>
-                </li>
-                <li>
-                    <a href="#">Vyhladať</a>
-                </li>
-            </ul>
-            <ul class="sidebar-nav" id="logout_button">
-                <li>
-                    <a href="#">Odhlásiť</a>
-                </li>
-            </ul>
-        </div>
-        <!-- /#sidebar-wrapper -->
-
+        <div w3-include-html="sidebar.html"></div>
         <!-- Page Content -->
         <div id="page-content-wrapper">
             <div class="container-fluid">
@@ -384,6 +346,7 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="http://www.w3schools.com/lib/w3data.js"></script>
 
     <!-- Menu Toggle Script -->
     <script>
@@ -391,6 +354,10 @@
         e.preventDefault();
         $("#wrapper").toggleClass("toggled");
     });
+    </script>
+
+    <script>
+    w3IncludeHTML();
     </script>
 
 </body>
