@@ -41,7 +41,7 @@
 
 <body>
     <div id="wrapper">
-        <div w3-include-html="sidebar.html"></div>
+        <div id="includedSidebar"></div>
         <!-- Page Content -->
         <div id="page-content-wrapper">
             <div class="container-fluid">
@@ -346,7 +346,7 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-    <script src="http://www.w3schools.com/lib/w3data.js"></script>
+    <script src="jquery.js"></script> 
 
     <!-- Menu Toggle Script -->
     <script>
@@ -356,9 +356,12 @@
     });
     </script>
 
-    <script>
-    w3IncludeHTML();
-    </script>
+
+    <script> 
+    $(function(){
+      $("#includedSidebar").load("sidebar.html"); 
+    });
+    </script> 
 
 </body>
 
