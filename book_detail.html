@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Library-X/Detail knihy</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <link href="css/timeline.css" rel="stylesheet">
+    <link href="css/book_detail.css" rel="stylesheet">
+
+
+    <script src="js/jquery.min.js"></script>
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script> /*
+        $(function(){
+            console.log($('#includedSidebar'));
+          $("#includedSidebar").load("sidebar.html"); 
+        });*/
+    </script> 
+
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="sidebar-wrapper">
+                <ul class="sidebar-nav">
+                    <li>
+                        <a href="#">
+                           <div style="width:250px" class="row">
+                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                    <img src="img/avatar.png" >
+                                </div>
+                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                    <p class="text-center">Michal Š.</p>
+                                    <p class="text-center">"M"</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">Domov</a>
+                    </li>
+                    <li>
+                        <a href="#">Kinižnica</a>
+                    </li>
+                    <li>
+                        <a href="#">Odporúčané</a>
+                    </li>
+                    <li>
+                        <a href="#">Vyhladať</a>
+                    </li>
+                </ul>
+                <ul class="sidebar-nav" id="logout_button">
+                    <li>
+                        <a href="#">Odhlásiť</a>
+                    </li>
+                </ul>
+            </div>
+        <!-- /#sidebar-wrapper -->
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div id="page-content-header" class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="nav-bar navbar-default navbar-light" style="background-color:#f0f0f5;border-radius: 5%;">
+                            <div class="navbar-inner">
+                                <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">
+                                            <span class="glyphicon glyphicon-th-list"></span>
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <a class="brand" href="#home"><img src="img/logo2.png"></a>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="search_bar" class="row">
+                    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search for book...">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                        <a href="#">
+                            Rozsirene vyhladavanie
+                        </a>
+                    </div>                 
+                </div>
+            </div>
+            <div id="page-content-book" class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img class="center" alt="Book image" src="https://images-na.ssl-images-amazon.com/images/I/519BHPC8P2L._AC_UL320_SR228,320_.jpg" />
+                            </div>
+                            <div class="col-md-4">
+                                <h2>Narnia: Lev, šatník a čarodejnica</h2>
+                                <h4>Autor: <span>C. S. Lewis</span></h4>
+                                <h4>Vydavateľstvo: <span></span>Slovart, 2005</h4>
+                                <p>
+                                    V Európe zúri vojna a deti posielajú rodičia z Londýna na vidiek, aby ich uchránili pred hrôzami bombardovania. Štvorica súrodencov sa takto dostane do vidieckeho sídla nemenovaného profesora, kde pri hre objavia skriňu na šaty, cez ktorú sa dá dostať do Narnie. Tú medzičasom ovládla zlá Jádis, ktorá má teraz meno Biela čarodejnica, lebo svoju krajinu zakliala tak, aby v nej bola navždy zima a nikdy Vianoce. Podľa starej veštby sa jej vláda má skončiť až vtedy, keď do trónov na hrade Cair Paravel zasadnú štyria ľudia. Zatiaľ však kruto vládne a mení všetkých, čo sa jej znepáčia, na kamenné sochy. Zachrániť ich môže iba Aslanov dych.                                
+                                </p>
+                            </div>
+                            <div class="col-md-2">
+                                <div id="book_eval">
+                                    <button id="eval" type="button" class="btn btn-default btn-lg">
+                                        <span class="glyphicon glyphicon-star"></span> 90%
+                                    </button> 
+                                    <button type="button" class="btn btn-default">
+                                        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Pridať o obľúbeným
+                                    </button>
+                                </div>
+                            </div>
+                            <div id="offer" class="col-md-3 col-sm-12" >
+                                <p>Kúpte si túto knihu už od <span style="font-weight:bold">12.99$</span>
+                                <div>
+                                    <span><img class="buy_icons" src="img/buy_icon_1.png"></span>  <a href="#">12.99$</a>
+                                </div>
+                                <div>
+                                    <span ></span><img class="buy_icons" src="img/buy_icon_2.png">  <a href="#">13.99$</a>
+                                </div>
+                                <div>
+                                    <span></span><img class="buy_icons" src="img/buy_icon_3.png">  <a href="#">20.89$</a>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div id="about_book" class="col-md-12">
+                                <h3>O knihe</h3>
+                                <p>Kroniky Narnie si získali srdcia miliónov čitateľov v celom „našom“ svete. V našom preto, lebo Narnia je iným, ďalším svetom, ktorý sa podarilo objaviť deťom. Je svetom plným čarodejníkov, víl a škriatkov, hovoriacich zvierat, dobra a zla, ale predovšetkým je svetom tisícov napínavých a dobrodružných príbehov. Prvý je vyrozprávaný v knihe Čarodejníkov synovec. Prečítajte si druhý…</p>
+                                <ul>
+                                    <li><span style="font-weight:bold">Počet strán: </span>184 strán</li>
+                                    <li><span style="font-weight:bold">Väzba: </span>pevná s prebalom väzba</li>
+                                    <li><span style="font-weight:bold">Rozmer: </span>130×195 mm</li>
+                                    <li><span style="font-weight:bold">Hmotnosť: </span>300 g</li>
+                                    <li><span style="font-weight:bold">Jazyk: </span>slovenský jazyk</li>
+                                    <li><span style="font-weight:bold">ISBN: </span>8071452718</li>
+                                    <li><span style="font-weight:bold">Rok vydania: </span>2005</li>
+                                    <li><span style="font-weight:bold">Naše katalógové číslo: </span>22825</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div id="about_author_img" class="col-md-2">
+                                    <img id="author_img" src="img/author_img.jpg">
+                                </div>
+                                <div id="about_author_text" class="col-md-10">
+                                    <h3>O autorovi</h3>
+                                    <p>Clive Staples Lewis (* 29. november 1898, Belfast, Írsko – † 22. november 1963, Oxford, Anglicko), známy ako C. S. Lewis a používajuci prezývku "Jack", bol írsky spisovateľ, básnik, akademik, literárny kritik, esejista, laický teológ a významný kresťanský apologéta, i jeden z najúspešnejších autorov fantasy. Jeho najpopulárnejším fantasy dielom preloženým do viac ako 30 jazykov je sedemdielna séria fantasy pre deti Kronika Narnie. Jej posledný diel Posledný boj (1956) získal najväčšie britské výročné ocenenie za knihu pre deti a mládež Carnegie Medal. V roku 2005 bola spoločnosťou Disney sfilmovaná druhá kniha z Kroník Narnie, Lev, šatník a čarodejnica. Film sa radí k najúspešnejším fantasy snímkam všetkých čias. V roku 2008 bol sfilmovaný štvrtý diel Kroník - Princ Kaspian. Na konci roka 2010 sa do kín dostal aj piaty diel Kroník (tretí filmový diel) - Dobrodružstvá Lode Ranný Pútnik.
+                                    </p>
+                                </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                               <h3>Používateľské recenzie (250)</h3>
+                               <div id="user_reviews" class="container-fluid col-md-12">
+                                    <div class="row">
+                                         <div id="user_image" class="col-md-1">
+                                            <img src="img/person_1.png">
+                                         </div>
+                                         <div id="user_text" class="col-md-11">
+                                             <div id="user_time_stamp">
+                                                <p>2. okóber 2016 o 9:52</p>
+                                             </div>
+                                             <p>
+                                                Lorem Ipsum je fiktívny text, používaný pri návrhu tlačovín a typografie. Lorem Ipsum je štandardným výplňovým textom už od 16. storočia, keď neznámy tlačiar zobral sadzobnicu plnú tlačových znakov a pomiešal ich, aby tak vytvoril vzorkovú knihu. Prežil nielen päť storočí, ale aj skok do elektronickej sadzby, a pritom zostal v podstate nezmenený. Spopularizovaný bol v 60-tych rokoch 20.storočia, vydaním hárkov Letraset, ktoré obsahovali pasáže Lorem Ipsum, a neskôr aj publikačným softvérom ako Aldus PageMaker, ktorý obsahoval verzie Lorem Ipsum.
+                                             </p>
+                                         </div>
+                                    </div>
+                                    <div class="row">
+                                         <div id="user_buttons" class="col-md-5">
+                                            <button class="like_button btn btn-primary"><span class="glyphicon glyphicon-thumbs-up"></span> <span>Páči sa mi to</span> | <span>258</span></button>
+                                            <button class="btn btn-primary"><span class="glyphicon glyphicon-comment "></span> Komentovať | <span>320</span></button>
+                                            <button class="btn btn-primary">Prečítať celú recenziu</button>
+
+                                         </div>
+                                    </div>
+                                </div>
+                                <div id="user_reviews" class="container-fluid col-md-12">
+                                    <div class="row">
+                                         <div id="user_image" class="col-md-1">
+                                            <img src="img/person_2.png">
+                                         </div>
+                                         <div id="user_text" class="col-md-11">
+                                             <div id="user_time_stamp">
+                                                <p>2. okóber 2016 o 9:52</p>
+                                             </div>
+                                             <p>
+                                                Lorem Ipsum je fiktívny text, používaný pri návrhu tlačovín a typografie. Lorem Ipsum je štandardným výplňovým textom už od 16. storočia, keď neznámy tlačiar zobral sadzobnicu plnú tlačových znakov a pomiešal ich, aby tak vytvoril vzorkovú knihu. Prežil nielen päť storočí, ale aj skok do elektronickej sadzby, a pritom zostal v podstate nezmenený. Spopularizovaný bol v 60-tych rokoch 20.storočia, vydaním hárkov Letraset, ktoré obsahovali pasáže Lorem Ipsum, a neskôr aj publikačným softvérom ako Aldus PageMaker, ktorý obsahoval verzie Lorem Ipsum.
+                                             </p>
+                                         </div>
+                                    </div>
+                                    <div class="row">
+                                         <div id="user_buttons" class="col-md-5">
+                                            <button class="like_button btn btn-primary"><span class="glyphicon glyphicon-thumbs-up"></span> <span>Páči sa mi to</span> | <span>258</span></button>
+                                            <button class="btn btn-primary"><span class="glyphicon glyphicon-comment "></span> Komentovať | <span>320</span></button>
+                                            <button class="btn btn-primary">Prečítať celú recenziu</button>
+                                         </div>
+                                    </div>
+                                </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                               <h3>Diskusia (250)</h3>
+                               <div id="user_reviews" class="container-fluid col-md-12">
+                                    <div class="row">
+                                         <div id="user_image" class="col-md-1">
+                                            <img src="img/person_3.png">
+                                         </div>
+                                         <div id="user_text" class="col-md-11">
+                                             <div id="user_time_stamp">
+                                                <p>2. okóber 2016 o 9:52</p>
+                                             </div>
+                                             <p>
+                                                Lorem Ipsum je fiktívny text, používaný pri návrhu tlačovín a typografie. Lorem Ipsum je štandardným výplňovým textom už od 16. storočia, keď neznámy tlačiar zobral sadzobnicu plnú tlačových znakov a pomiešal ich, aby tak vytvoril vzorkovú knihu. Prežil nielen päť storočí, ale aj skok do elektronickej sadzby, a pritom zostal v podstate nezmenený. Spopularizovaný bol v 60-tych rokoch 20.storočia, vydaním hárkov Letraset, ktoré obsahovali pasáže Lorem Ipsum, a neskôr aj publikačným softvérom ako Aldus PageMaker, ktorý obsahoval verzie Lorem Ipsum.
+                                             </p>
+                                         </div>
+                                    </div>
+                                    <div class="row">
+                                         <div id="user_buttons" class="col-md-4">
+                                            <button class="btn btn-primary"><span class="glyphicon glyphicon-comment "></span> Komentovať | <span>320</span></button>
+                                            <button class="btn btn-primary">Prečítať celý príspevok</button>
+
+                                         </div>
+                                    </div>
+                                </div>
+                                <div id="user_reviews" class="container-fluid col-md-12">
+                                    <div class="row">
+                                         <div id="user_image" class="col-md-1">
+                                            <img src="img/person_4.png">
+                                         </div>
+                                         <div id="user_text" class="col-md-11">
+                                             <div id="user_time_stamp">
+                                                <p>2. okóber 2016 o 9:52</p>
+                                             </div>
+                                             <p>
+                                                Lorem Ipsum je fiktívny text, používaný pri návrhu tlačovín a typografie. Lorem Ipsum je štandardným výplňovým textom už od 16. storočia, keď neznámy tlačiar zobral sadzobnicu plnú tlačových znakov a pomiešal ich, aby tak vytvoril vzorkovú knihu. Prežil nielen päť storočí, ale aj skok do elektronickej sadzby, a pritom zostal v podstate nezmenený. Spopularizovaný bol v 60-tych rokoch 20.storočia, vydaním hárkov Letraset, ktoré obsahovali pasáže Lorem Ipsum, a neskôr aj publikačným softvérom ako Aldus PageMaker, ktorý obsahoval verzie Lorem Ipsum.
+                                             </p>
+                                         </div>
+                                    </div>
+                                    <div class="row">
+                                         <div id="user_buttons" class="col-md-4">
+                                            <button class="btn btn-primary"><span class="glyphicon glyphicon-comment "></span> Komentovať | <span>320</span></button>
+                                            <button class="btn btn-primary">Prečítať celý príspevok</button>
+
+                                         </div>
+                                    </div>
+                                </div>
+                        </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    $(".like_button").click(function(e){
+        e.preventDefault();
+        
+        if($(this).hasClass("liked")) {        
+            $(this).children().eq(1).text(parseInt($(this).children().eq(1).text(), 10) - 1); 
+            $(this).children(':eq(0)').after('<span> Páči sa mi to</span>');   
+        }
+        else{
+            $(this).children().eq(2).text(parseInt($(this).children().eq(2).text(), 10) + 1);  
+            $(this).children().eq(1).remove();
+         } 
+
+        
+        $(this).toggleClass("liked");
+
+
+        });
+    </script>
+
+    
+</body>
+
+</html>

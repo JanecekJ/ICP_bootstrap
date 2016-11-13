@@ -1,0 +1,91 @@
+		.navbar {
+            position: relative;
+        }
+        .brand {
+            left: 50%;
+            display: block;
+        }
+        #page-content-book
+        {
+            margin-top: 20px;
+        }
+        #search_bar{
+            margin-top: 20px;
+        }
+        .center{
+            margin: auto;
+            display:block
+        }
+        #eval{
+            background-color: red;
+            color: white;
+            font-size: 30px;
+        }
+        #book_eval button{
+             display: block;
+             margin-top: 10px;
+             border-radius: 50px;
+
+        }
+        #user_image img{
+            max-width: 80px;
+            margin: auto;
+            display:block
+
+        }
+        #user_text{
+            font-size: 12px;      
+        }
+
+        #offer div{
+            width: 50%;
+            margin: 0 auto; 
+            margin-top: 20px;
+        }
+        #offer div a{
+            margin-left: 10px;
+        }
+
+        #user_time_stamp{
+            color: grey;
+            font-weight:bold;        
+        }
+        #user_buttons{
+            float: right;
+        }
+        #user_buttons button{
+            font-size: 12px;
+
+        }
+        #author_img{
+            max-height: 200px;
+            margin: auto;
+            display:block;
+         }
+        #user_reviews{
+            margin-top: 20px;
+        }
+        .liked{
+            background-color: green;
+        }
+        .liked:focus {
+            background-color: green;
+        }
+        .buy_icons{
+            max-height: 20px;
+        }
+        h2{
+            margin-top: 0px;
+        }
+        @media (max-width: 800px) {
+            #offer{
+                margin-top: 20px;
+            } 
+            #book_eval button{
+                display: inline-block;
+            }
+             #offers div{
+                display: inline-block;
+                margin-left: 20px;
+             }
+        }
