@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Library-X</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+        .navbar {
+            position: relative;
+        }
+        .brand {
+            position: absolute;
+            left: 50%;
+            margin-left: -77px !important;
+            display: block;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<div id="wrapper">
+    <div id="includedSidebar"></div>
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <li>
+                <a href="#">
+                    <div style="width:250px" class="row">
+                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                            <img src="img/avatar.png" >
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                            <p class="text-center">Michal Š.</p>
+                            <p class="text-center">"M"</p>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="home.html">Domov</a>
+            </li>
+            <li>
+                <a href="kniznica.html">Kinižnica</a>
+            </li>
+            <li>
+                <a href="odporucania.html">Odporúčané</a>
+            </li>
+            <li>
+                <a href="#">Vyhladať</a>
+            </li>
+        </ul>
+        <ul class="sidebar-nav" id="logout_button">
+            <li>
+                <a href="#">Odhlásiť</a>
+            </li>
+        </ul>
+    </div>
+    <!-- /#sidebar-wrapper -->
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="nav-bar navbar-default navbar-light" style="background-color:#f0f0f5;border-radius: 5%;">
+                        <div class="navbar-inner">
+                            <div class="container-fluid">
+                                <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">
+
+                                    <span class="glyphicon glyphicon-th-list"></span>
+                                </a>
+                                <a class="brand" style="top:0" href="home.html"><img src="img/logo2.png"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"  style="padding-top: 10px">
+                    <div class="row" style="padding-top: 10px">
+                        <div id="filter-panel" class="collapse filter-panel">
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                                            <label class="filter-col text-center" for="name-search">Názov knihy:</label>
+                                        </div>
+                                        <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+                                            <input type="text" class="form-control" id="name-search">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding-top: 10px">
+                                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                                            <label class="filter-col text-center" for="author-search">Meno autora:</label>
+                                        </div>
+                                        <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+                                            <input type="text" class="form-control" id="author-search">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding-top: 10px">
+                                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-xs-offset-2">
+                                            <label class="filter-col" for="gender-select">Žáner kníh:</label>
+                                            <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown">Žáner <span class="caret"></span></button>
+                                            <ul id="gender-select" class="dropdown-menu">
+                                                <li><a href="#" class="small" data-value="option01" tabIndex="-1"><input type="checkbox"/>&nbsp;Lorem</a></li>
+                                                <li><a href="#" class="small" data-value="option02" tabIndex="-1"><input type="checkbox"/>&nbsp;ipsum</a></li>
+                                                <li><a href="#" class="small" data-value="option03" tabIndex="-1"><input type="checkbox"/>&nbsp;dolor</a></li>
+                                                <li><a href="#" class="small" data-value="option04" tabIndex="-1"><input type="checkbox"/>&nbsp;sit</a></li>
+                                                <li><a href="#" class="small" data-value="option05" tabIndex="-1"><input type="checkbox"/>&nbsp;amet</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-xs-offset-2">
+                                            <label class="filter-col" for="year-select">Rok vydania:</label>
+                                            <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown">Rok <span class="caret"></span></button>
+                                            <ul id="year-select" class="dropdown-menu">
+                                                <li><a href="#" class="small" data-value="option11" tabIndex="-1"><input type="checkbox"/>&nbsp;consectetur</a></li>
+                                                <li><a href="#" class="small" data-value="option12" tabIndex="-1"><input type="checkbox"/>&nbsp;adipiscing</a></li>
+                                                <li><a href="#" class="small" data-value="option13" tabIndex="-1"><input type="checkbox"/>&nbsp;elit</a></li>
+                                                <li><a href="#" class="small" data-value="option14" tabIndex="-1"><input type="checkbox"/>&nbsp;nullam</a></li>
+                                                <li><a href="#" class="small" data-value="option15" tabIndex="-1"><input type="checkbox"/>&nbsp;efficitur</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding-top: 10px">
+                                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-lg-offset-5 col-md-offset-5 col-sm-offset-5 col-xs-offset-5">
+                                            <button type="submit" class="btn btn-default filter-col">
+                                                <span class="glyphicon glyphicon-record"></span> Filtrovať
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-primary pull-right" data-toggle="collapse" data-target="#filter-panel">
+                            <span class="glyphicon glyphicon-cog"></span> Filtrovanie
+                        </button>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style="padding-top: 10px">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Odporúčania podľa prečítaných</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div class="media-list">
+                                    <div class="media">
+                                        <div class="media-left media-top">
+                                            <a href="#">
+                                                <img class="media-object" src="img/odpo.jpg" width="100 px">
+                                            </a>
+                                        </div>
+                                        <div class="media-body">
+
+                                            <h4 class="media-heading">Názov(autor)</h4>
+                                            <h4 class="media-heading">Žáner</h4>
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce hendrerit dui sit amet sagittis pretium. Praesent gravida vestibulum leo, non efficitur nisi. Pellentesque augue sem, consequat eget nisi a, scelerisque imperdiet lorem. Integer eleifend commodo odio, eu interdum arcu placerat eu.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="media">
+                                        <div class="media-left media-top">
+                                            <a href="#">
+                                                <img class="media-object" src="img/odpo.jpg" width="100 px">
+                                            </a>
+                                        </div>
+                                        <div class="media-body">
+                                            <h4 class="media-heading">Názov(autor)</h4>
+                                            <h4 class="media-heading">Žáner</h4>
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce hendrerit dui sit amet sagittis pretium. Praesent gravida vestibulum leo, non efficitur nisi. Pellentesque augue sem, consequat eget nisi a, scelerisque imperdiet lorem. Integer eleifend commodo odio, eu interdum arcu placerat eu.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="media">
+                                        <div class="media-left media-top">
+                                            <a href="#">
+                                                <img class="media-object" src="img/odpo.jpg" width="100 px">
+                                            </a>
+                                        </div>
+                                        <div class="media-body">
+                                            <h4 class="media-heading">Názov(autor)</h4>
+                                            <h4 class="media-heading">Žáner</h4>
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce hendrerit dui sit amet sagittis pretium. Praesent gravida vestibulum leo, non efficitur nisi. Pellentesque augue sem, consequat eget nisi a, scelerisque imperdiet lorem. Integer eleifend commodo odio, eu interdum arcu placerat eu.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="media">
+                                        <div class="media-left media-top">
+                                            <a href="#">
+                                                <img class="media-object" src="img/odpo.jpg" width="100 px">
+                                            </a>
+                                        </div>
+                                        <div class="media-body">
+                                            <h4 class="media-heading">Názov(autor)</h4>
+                                            <h4 class="media-heading">Žáner</h4>
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce hendrerit dui sit amet sagittis pretium. Praesent gravida vestibulum leo, non efficitur nisi. Pellentesque augue sem, consequat eget nisi a, scelerisque imperdiet lorem. Integer eleifend commodo odio, eu interdum arcu placerat eu.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="media">
+                                        <div class="media-left media-top">
+                                            <a href="#">
+                                                <img class="media-object" src="img/odpo.jpg" width="100 px">
+                                            </a>
+                                        </div>
+                                        <div class="media-body">
+                                            <h4 class="media-heading">Názov(autor)</h4>
+                                            <h4 class="media-heading">Žáner</h4>
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce hendrerit dui sit amet sagittis pretium. Praesent gravida vestibulum leo, non efficitur nisi. Pellentesque augue sem, consequat eget nisi a, scelerisque imperdiet lorem. Integer eleifend commodo odio, eu interdum arcu placerat eu.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="media">
+                                        <div class="media-left media-top">
+                                            <a href="#">
+                                                <img class="media-object" src="img/odpo.jpg" width="100 px">
+                                            </a>
+                                        </div>
+                                        <div class="media-body">
+                                            <h4 class="media-heading">Názov(autor)</h4>
+                                            <h4 class="media-heading">Žáner</h4>
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce hendrerit dui sit amet sagittis pretium. Praesent gravida vestibulum leo, non efficitur nisi. Pellentesque augue sem, consequat eget nisi a, scelerisque imperdiet lorem. Integer eleifend commodo odio, eu interdum arcu placerat eu.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style="padding-top: 10px">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Odporúčania od používateľov</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div class="media-list">
+                                    <div class="media">
+                                        <div class="media-left media-top">
+                                            <a href="#">
+                                                <img class="media-object" src="img/odpo.jpg" width="100 px">
+                                            </a>
+                                        </div>
+                                        <div class="media-body">
+                                            <h4 class="media-heading">Názov(autor)</h4>
+                                            <h4 class="media-heading">Používateľ</h4>
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce hendrerit dui sit amet sagittis pretium. Praesent gravida vestibulum leo, non efficitur nisi. Pellentesque augue sem, consequat eget nisi a, scelerisque imperdiet lorem. Integer eleifend commodo odio, eu interdum arcu placerat eu.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="media">
+                                        <div class="media-left media-top">
+                                            <a href="#">
+                                                <img class="media-object" src="img/odpo.jpg" width="100 px">
+                                            </a>
+                                        </div>
+                                        <div class="media-body">
+                                            <h4 class="media-heading">Názov(autor)</h4>
+                                            <h4 class="media-heading">Používateľ</h4>
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce hendrerit dui sit amet sagittis pretium. Praesent gravida vestibulum leo, non efficitur nisi. Pellentesque augue sem, consequat eget nisi a, scelerisque imperdiet lorem. Integer eleifend commodo odio, eu interdum arcu placerat eu.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="media">
+                                        <div class="media-left media-top">
+                                            <a href="#">
+                                                <img class="media-object" src="img/odpo.jpg" width="100 px">
+                                            </a>
+                                        </div>
+                                        <div class="media-body">
+                                            <h4 class="media-heading">Názov(autor)</h4>
+                                            <h4 class="media-heading">Používateľ</h4>
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce hendrerit dui sit amet sagittis pretium. Praesent gravida vestibulum leo, non efficitur nisi. Pellentesque augue sem, consequat eget nisi a, scelerisque imperdiet lorem. Integer eleifend commodo odio, eu interdum arcu placerat eu.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="media">
+                                        <div class="media-left media-top">
+                                            <a href="#">
+                                                <img class="media-object" src="img/odpo.jpg" width="100 px">
+                                            </a>
+                                        </div>
+                                        <div class="media-body">
+                                            <h4 class="media-heading">Názov(autor)</h4>
+                                            <h4 class="media-heading">Používateľ</h4>
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce hendrerit dui sit amet sagittis pretium. Praesent gravida vestibulum leo, non efficitur nisi. Pellentesque augue sem, consequat eget nisi a, scelerisque imperdiet lorem. Integer eleifend commodo odio, eu interdum arcu placerat eu.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="media">
+                                        <div class="media-left media-top">
+                                            <a href="#">
+                                                <img class="media-object" src="img/odpo.jpg" width="100 px">
+                                            </a>
+                                        </div>
+                                        <div class="media-body">
+                                            <h4 class="media-heading">Názov(autor)</h4>
+                                            <h4 class="media-heading">Používateľ</h4>
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce hendrerit dui sit amet sagittis pretium. Praesent gravida vestibulum leo, non efficitur nisi. Pellentesque augue sem, consequat eget nisi a, scelerisque imperdiet lorem. Integer eleifend commodo odio, eu interdum arcu placerat eu.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="media">
+                                        <div class="media-left media-top">
+                                            <a href="#">
+                                                <img class="media-object" src="img/odpo.jpg" width="100 px">
+                                            </a>
+                                        </div>
+                                        <div class="media-body">
+                                            <h4 class="media-heading">Názov(autor)</h4>
+                                            <h4 class="media-heading">Používateľ</h4>
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce hendrerit dui sit amet sagittis pretium. Praesent gravida vestibulum leo, non efficitur nisi. Pellentesque augue sem, consequat eget nisi a, scelerisque imperdiet lorem. Integer eleifend commodo odio, eu interdum arcu placerat eu.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+</div>
+<!-- /#wrapper -->
+
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+<script src="jquery.js"></script>
+
+<!-- Menu Toggle Script -->
+<script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+</script>
+
+<script>
+    $(function(){
+        $("#includedSidebar").load("sidebar.html");
+    });
+</script>
+</body>
+
+</html>
