@@ -56,6 +56,7 @@
         #user_buttons button{
             font-size: 12px;
 
+
         }
         #author_img{
             max-height: 200px;
@@ -77,15 +78,26 @@
         h2{
             margin-top: 0px;
         }
-        @media (max-width: 800px) {
+        @media (max-width: 500px) {
             #offer{
                 margin-top: 20px;
             } 
             #book_eval button{
                 display: inline-block;
             }
-             #offers div{
+            #offers div{
                 display: inline-block;
                 margin-left: 20px;
              }
+            #user_buttons button{
+                display: block;
+                margin: 0 auto; 
+                margin-top: 10px;
+                float: none;
+            }
+            #user_buttons {
+                width: 50%;
+                margin: 0 auto; 
+                float: none;
+            }           
         }
