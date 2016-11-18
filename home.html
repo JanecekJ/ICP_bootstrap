@@ -122,7 +122,7 @@
                                     	<a data-toggle="collapse" href="#collapse1">Novinky zo sveta knih</a>
                                     </h3>
                                 </div>
-                                <div id="collapse1" class="panel-collapse collapse in">
+                                <div id="collapse1" class="panel-collapse collapse var">
 	                                <div class="panel-body fixed-panel" >
 	                                    <div class="media-list">
 	                                        <div class="media">
@@ -395,6 +395,33 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
     <script src="jquery.js"></script> 
+
+    <script>
+    $(window).on("load resize",function(e){
+    	console.log('loaded');
+    	console.log($(window).width());
+  		if($(window).width() < 992){
+  			console.log($('#collapse1'));
+  			console.log($('#collapse2'));
+    		$('#collapse1').removeClass('in');
+    		$('#collapse2').removeClass('in');
+		}
+		else{
+			$('#collapse1').addClass('in');
+			$('#collapse2').addClass('in');
+		}  
+		if($(window).width() < 992){
+  			console.log($('#collapse3'));
+  			console.log($('#collapse4'));
+    		$('#collapse3').removeClass('in');
+    		$('#collapse4').removeClass('in');
+		}
+		else{
+			$('#collapse3').addClass('in');
+			$('#collapse4').addClass('in');
+		}  
+	});
+    </script>
 
     <!-- Menu Toggle Script -->
     <script>
