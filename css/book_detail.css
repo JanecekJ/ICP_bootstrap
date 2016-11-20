@@ -1,6 +1,9 @@
 		.navbar {
             position: relative;
         }
+        #offer div{
+
+        }
         .brand {
             left: 50%;
             display: block;
@@ -38,9 +41,8 @@
         }
 
         #offer div{
-            width: 50%;
-            margin: 0 auto; 
             margin-top: 20px;
+            margin-left: 10px;
         }
         #offer div a{
             margin-left: 10px;
@@ -55,11 +57,9 @@
         }
         #user_buttons button{
             font-size: 12px;
-
-
         }
         #author_img{
-            max-height: 200px;
+            height: 150px;
             margin: auto;
             display:block;
          }
@@ -78,11 +78,20 @@
         h2{
             margin-top: 0px;
         }
-        @media (max-width: 500px) {
-            #offer{
+        h3{
+            margin-top: 0px;
+        }
+        @media (max-width: 992px) {
+            #offer div{
+                width: 150px;
+                margin: 0 auto;
                 margin-top: 20px;
             } 
+
             #book_eval button{
+                display: inline-block;
+            }
+            #book_eval div{
                 display: inline-block;
             }
             #offers div{
