@@ -119,8 +119,16 @@
                     </div>
                     <div class="col-lg-6 col-md-6 col-xs-12">
                         <div class="row" style="margin-top:5px">
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"> 
-                                <div class="form-group">
+                            <div class="col-md-12 col-sm-12">
+                                <div id="book_eval">
+                                    <div class="btn-group" role="group" aria-label="..." style="padding-bottom:5px;padding-top: 5px">
+                                        <button type="button" onclick="toggler2('datum');" class="btn btn-default">Citam knihu</button>
+                                        <button type="button" onclick="toggler1('datum');" class="btn btn-default">Precital som knihu</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <div id="datum" class="form-group">
                                     <label for="" class="control-label">Dátum prečítania knihy</label>
                                     <div class="input-group has-error">
                                         <input type="text" class="form-control" placeholder="DD">
@@ -199,10 +207,14 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script>
-        $("#menu-toggle").click(function(e) {
-            e.preventDefault();
-            $("#wrapper").toggleClass("toggled");
-        });
+        function toggler1(divId) {
+            $("#" + divId).show();
+        }
+    </script>
+    <script>
+        function toggler2(divId) {
+            $("#" + divId).hide();
+        }
     </script>
 </body>
 </html>
