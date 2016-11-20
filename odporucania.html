@@ -41,7 +41,6 @@
 <body>
 
 <div id="wrapper">
-    <div id="includedSidebar"></div>
     <!-- Sidebar -->
     <div id="sidebar-wrapper">
         <ul class="sidebar-nav">
@@ -166,7 +165,7 @@
                             <span class="glyphicon glyphicon-cog"></span> Filtrovanie
                         </button>
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style="padding-top: 10px">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="padding-top: 10px">
                         <div class="panel panel-default">
                             <div class="panel-heading">
                                 <h3 class="panel-title"><a data-toggle="collapse" href="#collapse1">Odporúčania podľa prečítaných</a></h3>
@@ -269,7 +268,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style="padding-top: 10px">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="padding-top: 10px">
                         <div class="panel panel-default">
                             <div class="panel-heading">
                                 <h3 class="panel-title"><a data-toggle="collapse" href="#collapse2">Odporúčania od používateľov</a></h3>
@@ -402,21 +401,7 @@
             $('#collapse2').addClass('in');
         }
     });
-</script>
-<!-- Menu Toggle Script -->
-<script>
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
-    });
-</script>
 
-<script>
-    $(function(){
-        $("#includedSidebar").load("sidebar.html");
-    });
-</script>
-<script>
     $("#menu-toggle").click(function(e) {
         e.preventDefault();
         $("#wrapper").toggleClass("toggled");
