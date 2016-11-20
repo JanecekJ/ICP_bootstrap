@@ -14,6 +14,21 @@
 	width:300px;
 }
 
+.DocumentItem-button1
+{
+    padding:0;
+}
+
+.DocumentItem-button2
+{
+    padding:0;
+}
+
+.DocumentItem-button3
+{
+    padding:0;
+}
+
 .list-inline {
 	white-space:nowrap;
 }
