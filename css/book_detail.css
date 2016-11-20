@@ -1,6 +1,15 @@
 		.navbar {
             position: relative;
         }
+        .navbar {
+            position: relative;
+        }
+        .brand {
+            position: absolute;
+            left: 50%;
+            margin-left: -77px !important;
+            display: block;
+        }
         .want_read{
             background-color: red;
 
