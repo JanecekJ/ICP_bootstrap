@@ -134,12 +134,16 @@
                                     <button id="eval" type="button" class="btn btn-default btn-lg">
                                         <span class="glyphicon glyphicon-star"></span> 90%
                                     </button> 
-                                    <button type="button" class="btn btn-default" onclick="location.href='poznamky.html';">
+                                    <div class="dropdown">
+                                       <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
                                         <span class="glyphicon glyphicon-plus"></span> Pridať do knižnice
-                                    </button>
-                                    <button type="button" class="btn btn-default">
-                                        <span class="glyphicon glyphicon-bookmark" aria-hidden="true"></span> Chcem čítať
-                                    </button>
+                                        <span class="caret"></span></button>
+                                        <ul class="dropdown-menu">
+                                          <li><a href="poznamky.html">Knihu som prečítal</a></li>
+                                          <li><a href="poznamky.html">Knihu čítam</a></li>
+                                          <li><a href="poznamky.html">Knihu chcem čítať</a></li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                             <div id="offer" class="col-md-3 col-sm-12" >
