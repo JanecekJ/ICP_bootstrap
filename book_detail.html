@@ -10,6 +10,8 @@
     <meta name="author" content="">
 
     <title>Library-X/Detail knihy</title>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -17,10 +19,6 @@
     <!-- Custom CSS -->
     <link href="css/simple-sidebar.css" rel="stylesheet">
     <link href="css/book_detail.css" rel="stylesheet">
-
-
-    <script src="js/jquery.min.js"></script>
-
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -133,16 +131,12 @@
                                     <button id="eval" type="button" class="btn btn-default btn-lg">
                                         <span class="glyphicon glyphicon-star"></span> 90%
                                     </button> 
-                                    <div class="dropdown">
-                                       <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                                     <button type="button" class="btn btn-default" onclick="location.href='poznamky.html';">
                                         <span class="glyphicon glyphicon-plus"></span> Pridať do knižnice
-                                        <span class="caret"></span></button>
-                                        <ul class="dropdown-menu">
-                                          <li><a href="poznamky.html">Knihu som prečítal</a></li>
-                                          <li><a href="poznamky.html">Knihu čítam</a></li>
-                                          <li><a href="poznamky.html">Knihu chcem čítať</a></li>
-                                        </ul>
-                                    </div>
+                                    </button>
+                                    <button type="button" id="want_read_button" class="btn btn-primary">
+                                        <span class="glyphicon glyphicon-bookmark" aria-hidden="true"></span><span>Chcem čítať</span>
+                                    </button>
                                 </div>
                             </div>
                             <div id="offer" class="col-md-3 col-sm-12" >
@@ -287,10 +281,10 @@
         </div>
         <!-- /#page-content-wrapper -->
 
+  
     </div>
     <!-- /#wrapper -->
 
- 
 
     <!-- Menu Toggle Script -->
     <script>
@@ -314,7 +308,36 @@
         $(this).toggleClass("liked");
 
 
+    });
+
+    $("#want_read_button").click(function(e){
+        e.preventDefault();
+        
+        if($(this).hasClass("want_read")) {        
+            $(this).children(':eq(0)').after('<span> Chcem čítať</span>');   
+            $(this).removeAttr("title");
+            $(this).removeAttr("data-toggle");
+            $(this).tooltip('disable');
+        }
+        else{
+            $(this).children().eq(1).remove();
+            $(this).attr("data-toggle", "tooltip");
+            $(this).attr("title", "Chcem čítať");
+            $(this).attr("data-placement", "bottom");
+            $(this).tooltip();
+
+         } 
+        
+        $(this).toggleClass("want_read");
+
+
         });
+
+
+    $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+
     </script>
 
     

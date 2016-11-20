@@ -1,6 +1,14 @@
 		.navbar {
             position: relative;
         }
+        .want_read{
+            background-color: red;
+
+        }
+        .want_read:focus{
+            background-color: red;
+        }
+
         #offer div{
 
         }
